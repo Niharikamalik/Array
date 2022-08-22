@@ -1,17 +1,24 @@
 import java.util.Scanner;
 
-class Main{
+class Main 
+{
     public static void main (String[] args) {
+        /* code */
         Scanner sc = new Scanner(System.in);
-        System.out.print("enter the length of array : ");
-        int n =sc.nextInt();
-        int []arr = new int[n];
-        System.out.print("Enter "+n+" values for array : ");
-        for (int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
+        System.out.print("Enter the size of array : ");
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int arr[][] = new int[n][m];
+        System.out.println("Enter "+n*m+ " values for array ");
+        for (int i=0 ;i<n;i++){
+            for(int j=0;j<m;j++)
+                arr[i][j]=sc.nextInt();
         }
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
+         for (int i=0 ;i<n;i++){
+            for(int j=0;j<m;j++)
+               System.out.print(arr[i][j]+" ");
+               
+            System.out.println();   
         }
     }
 }
