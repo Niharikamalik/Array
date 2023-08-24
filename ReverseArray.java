@@ -1,27 +1,18 @@
-public class Main
-{
-	public static void main(String[] args) {
-		int arr[] = {12,3,24,6,8};
-		System.out.println("Before reverse");
-		for(int i=0;i<arr.length;i++){
-		    System.out.print(arr[i]+" ");
-		}
-		System.out.println();
-		System.out.println("After reverse");
-		reverse(arr);
-		for(int i=0;i<arr.length;i++){
-		    System.out.print(arr[i]+" ");
-		}
-	}
-	static void reverse(int arr[]){
-	    int low = 0 ,high=arr.length-1;
-	    while(low<high){
-	        int temp;
-	        temp= arr[low];
-	        arr[low]=arr[high];
-	        arr[high]=temp;
-	        low++;
-	        high--;
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+	    int arr[]= {10,20,40,30,50};
+	    int []rarr= new int[arr.length];
+	    int j =0 ;
+	    for(int i=arr.length-1; i>=0; i--){
+	         rarr[j]=arr[i];
+	         j+=1;
 	    }
-	}
+	    for(int i=0; i<rarr.length; i++){
+	        System.out.println(rarr[i]);
+	    }
+	  	}
 }
